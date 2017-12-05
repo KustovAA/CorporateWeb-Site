@@ -1,0 +1,92 @@
+.container {
+    width: 1100px;
+    height: 1786px;
+    /* position: relative;
+    margin-left: -550px;
+    left: 50%; */
+}
+
+.header {
+    height: 77px;
+    height: 150px;
+    object-fit: contain;
+    background-color: #4b73b5;
+}
+
+.logo_header {
+    width: 120px;
+    height: 36px;
+    margin-right: 900px;
+}
+
+.phone {
+    width: 173px;
+    height: 22px;
+    object-fit: contain;
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 2.57;
+    text-align: left;
+    color: #fff;
+}
+
+.table {
+    width: 102px;
+    height: 14px;
+    object-fit: contain;
+    opacity: 0.7;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 3.86;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form__item-text {
+    width: 68px;
+    height: 10px;
+    object-fit: contain;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 4.5;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #221f1f;
+  }
+
+  .form__picture {
+    width: 1007px;
+    height: 299px;
+    object-fit: contain;
+  }
+
+  .flower {
+    width: 27px;
+    height: 31px;
+    object-fit: contain;
+    background-color: #4b73b5;
+  }
+
+  .mark-as-favorite-star {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    background-color: #4b73b5;
+  }
+
+  .painter-palette {
+    width: 28px;
+    height: 29px;
+    object-fit: contain;
+    background-color: #4b73b5;
+  }
+
+  .footer {
+    height: 77px;
+    height: 150px;
+    object-fit: contain;
+    background-color: #4b73b5;
+  }
