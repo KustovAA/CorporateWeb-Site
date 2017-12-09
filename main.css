@@ -1,3 +1,9 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .container {
   width: 1100px;
   height: 2000px;
@@ -24,10 +30,15 @@ background-color: #4b73b5;
 .logo_header {
   width: 120px;
   height: 36px;
-  margin-right: 900px;
+  background-image: url(img/logo-header.png);
+  overflow: hidden;
 }
 
-.phone {
+.phone, .logo_header {
+  display: inline-block;
+}
+
+.phone a {
   width: 173px;
   height: 22px;
   object-fit: contain;
@@ -37,6 +48,7 @@ background-color: #4b73b5;
   line-height: 2.57;
   text-align: left;
   color: #fff;
+  text-decoration: none;
 }
 
 .table {
@@ -76,14 +88,37 @@ background-color: #4b73b5;
   color: #4b73b5;
 }
 
+.form__item-img {
+  overflow: hidden;
+}
+
+.form__item-img, .form__item-text {
+  display: inline-block;
+}
+
+.form__item-text a {
+  text-decoration: none;
+  color: #4b73b5;
+}
+
 .form__item-text-active {
   color: #221f1f;
+}
+
+.form__item-text-active a {
+  color: #221f1f;
+}
+
+.form__list-menu li {
+  list-style-type: none;
 }
 
 .form__picture {
   width: 1007px;
   height: 299px;
+  background-image: url(img/photo.png);
   object-fit: contain;
+  overflow: hidden;
 }
 
 .form__background-for-item-pic img {
@@ -218,6 +253,7 @@ ul.form__social-media-icons li {
   height: 68px;
   object-fit: contain;
   background-color: #4b73b5;
+  overflow: hidden;
   border-radius: 50%;
 }
 
@@ -239,6 +275,7 @@ ul.form__social-media-icons li {
   object-fit: contain;
   background-color: #cfd8dc;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .form__background-for-news-pic img {
@@ -254,6 +291,7 @@ ul.form__social-media-icons li {
   object-fit: contain;
   background-color: #cfd8dc;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .form__background-for-social-media-icon img {
