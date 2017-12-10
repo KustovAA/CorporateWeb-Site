@@ -10,15 +10,15 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header>
             <section class="container">
-                <div class="logo_header">
-                    <img src="img/logo-header.png" alt="Логотип"
-                    srcset="img/logo-header@2x.png 2x,
-                        img/logo-header@3x.png 3x">
-                </div>
+                <a href="index.html" class="logo_header">
+                    <img src="img/logo/logo-header.png" alt="Логотип"
+                    srcset="img/logo/logo-header@2x.png 2x,
+                        img/logo/logo-header@3x.png 3x">
+                </a>
                 <div class="phone">
-                    <a href="+78000039210">8 (800) 00-392-10</a>
+                    <a href="tel:+78000039210">8 (800) 00-392-10</a>
                     <article class="table">График работы</article>
                 </div>
             </section>
@@ -28,205 +28,216 @@
                 <ul class="form__list-menu">
                     <li class="form__list-menu-item">
                         <div class="form__item-img">
-                            <img src="img/main-icon.png" alt="Главная"
-                            srcset="img/main-icon@2x.png 2x,
-                                    img/main-icon@3x.png 3x">
+                            <img src="img/icons/main-icon.png" alt="Главная"
+                            srcset="img/icons/main-icon@2x.png 2x,
+                                    img/icons/main-icon@3x.png 3x">
                         </div>
                         <label class="form__item-text form__item-text-active"><a href="index.html">Главная</a></label>
                     </li>
                     <li class="form__list-menu-item">
                         <div class="form__item-img">
-                            <img src="img/feed-icon.png" alt="Отзывы"
-                            srcset="img/feed-icon@2x.png 2x,
-                                    img/feed-icon@3x.png 3x">
+                            <img src="img/icons/feed-icon.png" alt="Отзывы"
+                            srcset="img/icons/feed-icon@2x.png 2x,
+                                    img/icons/feed-icon@3x.png 3x">
                             </div>
-                        <label class="form__item-text"><a href="">Отзывы</a></label>
+                        <label class="form__item-text"><a href="#">Отзывы</a></label>
                     </li>
                     <li class="form__list-menu-item">
                         <div class="form__item-img">
-                            <img src="img/team-icon.png" alt="Экипаж"
-                            srcset="img/team-icon@2x.png 2x,
-                                    img/team-icon@3x.png 3x">
+                            <img src="img/icons/team-icon.png" alt="Экипаж"
+                            srcset="img/icons/team-icon@2x.png 2x,
+                                    img/icons/team-icon@3x.png 3x">
                         </div>
-                        <label class="form__item-text"><a href="">Экипаж</a></label>
+                        <label class="form__item-text"><a href="#">Экипаж</a></label>
                     </li>
                 </ul>
-                <div class="form__picture">
-                    <img src="img/photo.png" alt="Самолет"
-                        srcset="img/photo@2x.png 2x,
-                                img/photo@3x.png 3x">
-                </div>
             </nav>
+            <div class="form__picture">
+                <img src="img/content/photo.png" alt="Самолет"
+                    srcset="img/content/photo@2x.png 2x,
+                            img/content/photo@3x.png 3x"
+                    class="plane">
+            </div>
             <section class="form__rate">
+                <span class="rates">Тарифы</span>
                 <ul class="form__rate-list">
-                    <li class="from__rate-list-item">
+                    <li class="form__rate-list-item">
                         <div class="form__background-for-item-pic">
-                            <img src="img/flower.png" alt="Цветок"
-                            srcset="img/flower@2x.png 2x,
-                                    img/flower@3x.png 3x"
+                            <img src="img/icons/flower.png" alt="Цветок"
+                            srcset="img/icons/flower@2x.png 2x,
+                                    img/icons/flower@3x.png 3x"
                             class="flower">
                         </div>
                         <label class="form__item-name">Стандарт</label>
-                        <div class="form_item_description">
+                        <div class="form__item-description">
                             <label class="form__item-comment">Создан для вашего комфортного отдыха</label>
-                            <ul class="form__item_offers">
+                            <ul class="form__item-offers">
                                 <li class="offer">Питание включено</li>
                                 <li class="offer">Багаж(5кг)</li>
                                 <li class="offer">Детское кресло</li>
                             </ul>
+                            <span class="price">$19</span>
                         </div>
                     </li>
-                    <li class="from__rate-list-item">
+                    <li class="form__rate-list-item">
                         <div class="form__background-for-item-pic">
-                            <img src="img/mark-as-favorite-star.png" alt="Звезда"
-                            srcset="img/mark-as-favorite-star@2x.png 2x,
-                                    img/mark-as-favorite-star@3x.png 3x"
+                            <img src="img/icons/mark-as-favorite-star.png" alt="Звезда"
+                            srcset="img/icons/mark-as-favorite-star@2x.png 2x,
+                                    img/icons/mark-as-favorite-star@3x.png 3x"
                             class="mark-as-favorite-star">
                         </div>
                         <label class="form__item-name">Премиум</label>
-                        <div class="form_item_description">
+                        <div class="form__item-description">
                             <label class="form__item-comment">Для любителей хороших впечатлений</label>
-                            <ul class="form__item_offers">
+                            <ul class="form__item-offers">
                                 <li class="offer">Питание включено</li>
                                 <li class="offer">Багаж(5кг)</li>
                                 <li class="offer">Детское кресло</li>
                             </ul>
+                            <span class="price">$39</span>
                         </div>
                     </li>
-                    <li class="from__rate-list-item">
+                    <li class="form__rate-list-item">
                         <div class="form__background-for-item-pic">
-                            <img src="img/painter-palette.png" alt="Палитра"
-                            srcset="img/painter-palette@2x.png 2x,
-                                    img/painter-palette@3x.png 3x"
+                            <img src="img/icons/painter-palette.png" alt="Палитра"
+                            srcset="img/icons/painter-palette@2x.png 2x,
+                                    img/icons/painter-palette@3x.png 3x"
                             class="painter-palette">
                         </div>    
                         <label class="form__item-name">Лакшери</label>
-                        <div class="form_item_description">
+                        <div class="form__item-description">
                             <label class="form__item-comment">Все самое лучшее и не забываемое</label>
-                            <ul class="form__item_offers">
+                            <ul class="form__item-offers">
                                 <li class="offer">Питание включено</li>
                                 <li class="offer">Багаж(5кг)</li>
                                 <li class="offer">Детское кресло</li>
                             </ul>
+                            <span class="price">$99</span>
                         </div>
                     </li>
                 </ul>
             </section>
             <section class="form__last-news">
-                <h1 class="form__news-label">Последние новости</h1>
+                <span class="form__news-label">Последние новости</span>
                 <ul class="form__news-list">
                     <li class="form__news">
                         <div class="form__background-for-news-pic">
-                            <img src="img/planeflying.png" alt="Ночные перелеты"
-                            srcset="img/planeflying@2x.png 2x,
-                                    img/planeflying@3x.png 3x"
+                            <img src="img/content/planeflying.png" alt="Ночные перелеты"
+                            srcset="img/content/planeflying@2x.png 2x,
+                                    img/content/planeflying@3x.png 3x"
                             class="planeflying">
                         </div>
-                        <article class="form__news-date">12.10.2016</article>
-                        <h3 class="form__news-header">Ночные перелёты дешевле!</h3>
-                        <article class="from__news-main">
-                            Ужасный полет, трясло первые полчаса так, что я боялась отстегнуть ремни.
-                            Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
-                            Не рекомендую эту компанию, лучше доплатить и лететь с комфортом.
-                        </article>
+                        <div class="text">
+                            <article class="form__news-date">12.10.2016</article>
+                            <article class="form__news-header">Ночные перелёты дешевле!</article>
+                            <article class="from__news-main">
+                                Ужасный полет, трясло первые полчаса так, что я боялась отстегнуть ремни.
+                                Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
+                                Не рекомендую эту компанию, лучше доплатить и лететь с комфортом.
+                            </article>
+                        </div>
                     </li>
                     <li class="form__news">
                         <div class="form__background-for-news-pic">
-                            <img src="img/photo(1).png" alt="Грузия"
-                            srcset="img/photo(1)@2x.png 2x,
-                                    img/photo(1)@3x.png 3x"
+                            <img src="img/content/photo(1).png" alt="Грузия"
+                            srcset="img/content/photo(1)@2x.png 2x,
+                                    img/content/photo(1)@3x.png 3x"
                             class="Photo">
                         </div>
-                        <article class="form__news-date">01.02.2016</article>
-                        <h3 class="form__news-header">Путешествие в Грузию стало доступнее</h3>
-                        <article class="from__news-main">
-                            Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз.
-                            Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост 2,1м.
-                        </article>
+                        <div class="text">
+                            <article class="form__news-date">01.02.2016</article>
+                            <article class="form__news-header">Путешествие в Грузию стало доступнее</article>
+                            <article class="from__news-main">
+                                Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз.
+                                Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост 2,1м.
+                            </article>
+                        </div>
                     </li>
                     <li class="form__news">
                         <div class="form__background-for-news-pic">
-                            <img src="img/layer-5.png" alt="Детские билеты"
-                            srcset="img/layer-5@2x.png 2x,
-                                    img/layer-5@3x.png 3x"
+                            <img src="img/content/layer-5.png" alt="Детские билеты"
+                            srcset="img/content/layer-5@2x.png 2x,
+                                    img/content/layer-5@3x.png 3x"
                             class="Layer-5">
                         </div>
-                        <article class="form__news-date">22.12.2015</article>
-                        <h3 class="form__news-header">Детские авиабилеты доступны для бизнес-класса</h3>
-                        <article class="from__news-main">
-                            Не кормили вообще! Сказали, что это из-за того, что полет менее 2,5 часов.
-                            Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались.
-                            Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.
-                        </article>
+                        <div class="text">
+                            <article class="form__news-date">22.12.2015</article>
+                            <article class="form__news-header">Детские авиабилеты доступны для бизнес-класса</article>
+                            <article class="from__news-main">
+                                Не кормили вообще! Сказали, что это из-за того, что полет менее 2,5 часов.
+                                Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались.
+                                Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.
+                            </article>
+                        </div>
                     </li>
                 </ul>
             </section>
             <div class="form__pages">
-                <article class="form__current-page-number">Страница 1 из 7</article>
-                <article class="from__move-lock">&#60;</article>
-                <div class="form__selected-page">
-                    <article class="form__page-number">1</article>
-                </div>
-                <article class="form__page-number">2</article>
-                <article class="form__page-number">3</article>
-                <article class="form__page-number">4</article>
-                <article class="form__page-number">5</article>
-                <article class="form__page-number">6</article>
-                <article class="form__page-number">7</article>
-                <article class="from__move-unlock">&#62;</article>
+                <ul class="form__page-numbers">
+                    <li class="form__page-number form__current-page-number">Страница 1 из 7</li>
+                    <li class="from__move-lock form__page-number">&#60;</li>
+                    <li class="form__selected-page form__page-number">1</li>
+                    <li class="form__page-number">2</li>
+                    <li class="form__page-number">3</li>
+                    <li class="form__page-number">4</li>
+                    <li class="form__page-number">5</li>
+                    <li class="form__page-number">6</li>
+                    <li class="form__page-number">7</li>
+                    <li class="from__move-unlock form__page-number">&#62;</li>
+                </ul>
             </div>
         </main>
-        <footer class="footer">
+        <footer>
                 <div class="container">
                     <article class="form__footer-text">
                         Сделано с любовью и старанием
                         на курсе «HTML + CSS» в <strong>LoftSchool</strong>.
                         Автор работы: <strong>Кустов Андрей</strong>
                     </article>
-                    <div class="logo_header">
-                        <img src="img/logo-header.png" alt="Логотип"
-                        srcset="img/logo-header@2x.png 2x,
-                                img/logo-header@3x.png 3x">
-                    </div>
+                    <a href="index.html" class="logo_header">
+                        <img src="img/logo/logo-header.png" alt="Логотип"
+                        srcset="img/logo/logo-header@2x.png 2x,
+                                img/logo/logo-header@3x.png 3x">
+                    </a>
                     <p class="form__social-media">Наши социальные сети</p>
                     <ul class="form__social-media-icons">
-                        <li>
+                        <li class="form__social-media-icon">
                             <div class="form__background-for-social-media-icon">
-                                <img src="img/vk.png" alt="ВК"
-                                srcset="img/vk@2x.png 2x,
-                                        img/vk@3x.png 3x"
+                                <img src="img/icons/vk.png" alt="ВК"
+                                srcset="img/icons/vk@2x.png 2x,
+                                        img/icons/vk@3x.png 3x"
                                 class="vk">
                             </div>
                         </li>
-                        <li>
+                        <li class="form__social-media-icon">
                             <div class="form__background-for-social-media-icon">
-                                <img src="img/fb.png" alt="ФБ"
-                                srcset="img/fb@2x.png 2x,
-                                        img/fb@3x.png 3x"
+                                <img src="img/icons/fb.png" alt="ФБ"
+                                srcset="img/icons/fb@2x.png 2x,
+                                        img/icons/fb@3x.png 3x"
                                 class="fb">
                             </div>
                         </li>
-                        <li>
+                        <li class="form__social-media-icon"> 
                             <div class="form__background-for-social-media-icon">
-                                <img src="img/google.png" alt="Гугл"
-                                srcset="img/google@2x.png 2x,
-                                        img/google@3x.png 3x"
+                                <img src="img/icons/google.png" alt="Гугл"
+                                srcset="img/icons/google@2x.png 2x,
+                                        img/icons/google@3x.png 3x"
                                 class="google">
                             </div>
                         </li>
-                        <li>
+                        <li class="form__social-media-icon">
                             <div class="form__background-for-social-media-icon">
-                                <img src="img/twitter.png" alt="Твиттер"
-                                srcset="img/twitter@2x.png 2x,
-                                        img/twitter@3x.png 3x"
+                                <img src="img/icons/twitter.png" alt="Твиттер"
+                                srcset="img/icons/twitter@2x.png 2x,
+                                        img/icons/twitter@3x.png 3x"
                                 class="twitter">
                             </div>
                         </li>
-                        <li>
+                        <li class="form__social-media-icon">
                             <div class="form__background-for-social-media-icon">
-                                <img src="img/mail.png" alt="Мэйл ру"
-                                srcset="img/mail@2x.png 2x,
-                                        img/mail@3x.png 3x"
+                                <img src="img/icons/mail.png" alt="Мэйл ру"
+                                srcset="img/icons/mail@2x.png 2x,
+                                        img/icons/mail@3x.png 3x"
                                 class="mail">
                             </div>
                         </li>                        
