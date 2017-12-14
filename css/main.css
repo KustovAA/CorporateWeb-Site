@@ -113,6 +113,26 @@ li {
     height: 18px;
 }
 
+.menu__item-icon-main {
+    background: url(../img/icons/main-icon.png) no-repeat;
+}
+
+.menu__item-icon-feed {
+    background: url(../img/icons/feed-icon.png) no-repeat;
+}
+
+.menu__item-icon-team {
+    background: url(../img/icons/team-icon.png) no-repeat;
+}
+
+.menu__item-link:hover .menu__item-icon-feed {
+    background: url(../img/icons/feed-icon1.png) no-repeat;
+}
+
+.menu__item-link:hover .menu__item-icon-team {
+    background: url(../img/icons/team-icon1.png) no-repeat;
+}
+
 .menu__item-link {
     font-family: Roboto;
     font-size: 12px;
@@ -123,7 +143,6 @@ li {
     text-align: left;
     text-decoration: none;
     color: #4b73b5; 
-    margin-left: 12px;
 }
 
 .menu__item-link.is-active, .menu__item-link:hover{
