@@ -49,6 +49,7 @@ header {
 
 footer {
     height: 77px;
+    min-width: 1100px;
     background-color: #4b73b5;
     margin-top: -77px;
 }
