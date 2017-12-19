@@ -118,7 +118,7 @@ li {
 }
 
 .menu__item-icon-feed {
-    background: url(../img/icons/feed-icon-black.png) no-repeat;
+    background: url(../img/icons/feed-icon.png) no-repeat;
 }
 
 .menu__item-icon-team {
@@ -147,6 +147,10 @@ li {
 
 .menu__item-link.is-active, .menu__item-link:hover{
     color: #221f1f;
+}
+
+.menu__item-link.is-active .menu__item-icon-feed {
+    background: url(../img/icons/feed-icon-black.png) no-repeat;
 }
 
 .content {
@@ -211,22 +215,6 @@ li {
     visibility: hidden;
     width: 0;
     height: 0;
-}
-
-.comments__img-girl {
-    background: url(../img/content/twk-2-lletn-u-christopher-campbell.png) no-repeat;
-}
-
-.comments__img-man {
-    background: url(../img/content/cyxmk-32-bdlo-kahar-saidyhalam.png) no-repeat;
-}
-
-.comments__img-default {
-    background: url(../img/content/vector-smart-object.png) no-repeat;
-}
-
-.comments__img-granny {
-    background: url(../img/content/y-0-i-85-d-5-qkvs-alex-harvey.png) no-repeat;
 }
 
 .comments__text {
@@ -454,8 +442,9 @@ li {
 .form__radio-fake:after {
     content: "";
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 0;
     height: 0;
     border-radius: 50%;

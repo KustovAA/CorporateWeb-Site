@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box; 
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    min-width: auto;
+    min-height: 100%;
+    background: url(../img/background/kzhhnb-6-xsqi-margo-brodowicz.png);
+    background-size: cover;
+}
+
+.intro {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; 
+}
+
+.intro::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+}
+
+.intro__block {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.intro__send-img {
+    width: 23px;
+    height: 18px;
+    background: url(../img/icons/main-icon.png) no-repeat;
+}
+
+.intro__logo, .intro__send {
+    display: block;
+}
+
+.intro__send {
+    width: 207px;
+    height: 45px;
+    margin-top: 40px;
+    border-radius: 3px;
+    position: relative;
+    border: solid 1px #1c5bc3;
+}
+
+.intro__send:hover {
+    background-color: #1c5bc3;
+}
+
+.intro__send:hover .intro__send-text {
+    background-color: #1c5bc3;
+    color: #fff;
+}
+
+.intro__send:hover .intro__send-img {
+    background: url(../img/icons/main-icon-white.png) no-repeat;
+}
+
+.intro__send-text, .intro__send-img {
+    position: absolute;
+}
+
+.intro__send-text {
+    text-transform: uppercase;
+    width: 145px;
+    height: 12px;
+    left: 20px;
+    top: 16px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #1c5bc4;
+}
+
+.intro__send-img {
+    left: 171px;
+    top: 13px;
+}
