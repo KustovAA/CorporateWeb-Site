@@ -1,0 +1,65 @@
+.sidebar {
+    float: left;
+    width: 180px;
+    padding-top: 50px;
+}
+
+.menu__item-link, .menu__item-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu__item-icon {
+    width: 23px;
+    height: 18px;
+    margin-right: 19px;
+    background: url(../img/sprites/menu_sprites.png) no-repeat;
+}
+
+.menu__item-icon-main {
+    background-position: -47px -50px;
+}
+
+.menu__item-icon-feed {
+    background-position: -284px -50px;
+}
+
+.menu__item-icon-team {
+    background-position: -524px -50px;
+}
+
+.menu__item-link:hover .menu__item-icon-feed {
+    background-position: -404px -50px;
+}
+
+.menu__item-link:hover .menu__item-icon-team {
+    background-position: -647px -50px;
+}
+
+.menu__item-link {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 4.5;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    text-align: left;
+    text-decoration: none;
+    color: #4b73b5; 
+}
+
+.menu__item-link.is-active, .menu__item-link:hover{
+    color: #221f1f;
+}
+
+.menu__item-link.is-active .menu__item-icon-main, .menu__item-link:hover .menu__item-icon-main {
+    background-position: -164px -50px;
+}
+
+.menu__item-link.is-active .menu__item-icon-feed, .menu__item-link:hover .menu__item-icon-feed {
+    background-position: -404px -50px;
+}
+
+.menu__item-link.is-active .menu__item-icon-team, .menu__item-link:hover .menu__item-icon-team {
+    background-position: -647px -50px;
+}

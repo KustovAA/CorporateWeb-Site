@@ -1,0 +1,89 @@
+.footer__left, .footer__center, .footer__right {
+    float: left;
+    width: 33.33%;
+}
+
+.footer__left {
+    width: 250px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.29;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
+
+.footer__loftschool-link {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.footer__center,  .footer__right {
+    margin-top: 20px;
+    margin-bottom: 21px;
+    text-align: right;
+}
+
+.logof {
+    vertical-align: middle;
+}
+
+.social-media__title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    color: #ffffff;
+}
+
+.social-media__list {
+    margin-right: 12px;
+}
+
+.social-media__item {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.social-media__item-img {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: url(../img/sprites/social-media_sprites.png) no-repeat;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 50%;
+    transition: opacity 0.7s;
+}
+
+.social-media__item-img-text {
+    position: absolute;
+    left: -9999px;
+}
+
+.social-media__item-img:hover {
+    opacity: 1;
+}
+
+.social-media__item-img--vk {
+    background-position: -46px -43px;
+}
+
+.social-media__item-img--fb {
+    background-position: -43px -480px;
+}
+
+.social-media__item-img--google {
+    background-position: -46px -151px;
+}
+
+.social-media__item-img--twitter {
+    background-position: -46px -259px;
+}
+
+.social-media__item-img--mail {
+    background-position: -46px -368px;
+}

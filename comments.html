@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/comments.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/feed.css">
     <title>Отзывы</title>
 </head>
 <body>
@@ -27,31 +27,35 @@
                         <a href="tel:+78000039210" class="contacts__phone-link">8 (800) 00-392-10</a>
                         <div class="contacts__time">
                             <a class="contacts__time-link" href="#">График работы</a>
+                            <div class="schedule">
+                                <div class="schedule__time">пн-вс: 09:00-20:00</div>
+                                <div class="schedule__lunch">обед: 14:00-14:30</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <div class="container">
+        <div class="container clearfix">
             <aside class="sidebar">
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__item-link" href="main.html">
                                 <div class="menu__item-icon menu__item-icon-main"></div>
-                                <label for="menu__item-icon menu__item-icon-text">Главная</label>
+                                <span for="menu__item-icon menu__item-icon-text">Главная<span>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__item-link is-active" href="comments.html">
                                 <div class="menu__item-icon menu__item-icon-feed"></div>
-                                <label for="menu__item-icon menu__item-icon-text">Отзывы</label>
+                                <span for="menu__item-icon menu__item-icon-text">Отзывы</span>
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__item-link" href="#">
+                            <a class="menu__item-link" href="team.html">
                                 <div class="menu__item-icon menu__item-icon-team"></div>
-                                <label for="menu__item-icon menu__item-icon-text">Экипаж</label>
+                                <span for="menu__item-icon menu__item-icon-text">Экипаж</span>
                             </a>
                         </li>
                     </ul>
@@ -62,7 +66,6 @@
                     <li class="breadcrumb">
                         <a class="breadcrumb__link" href="main.html">Главная</a>
                     </li>
-                    /
                     <li class="breadcrumb">
                         <a class="breadcrumb__link breadcrumb__link-not-active" href="#">Отзывы</a>
                     </li>                    
@@ -72,8 +75,8 @@
                     <ul class="comments__list">
                         <li class="comments__item">
                             <div class="comments__img" 
-                            style="background: url(img/content/twk-2-lletn-u-christopher-campbell.png) no-repeat">
-                                <img src="img/content/twk-2-lletn-u-christopher-campbell.png"
+                            style="background-image: url(img/content/twk-2-lletn-u-christopher-campbell.png)">
+                                <img src="img/content/twk-2-lletn-u-christopher-campbell.png" alt="девушка"
                                 srcset="img/content/twk-2-lletn-u-christopher-campbell@2x.png 2x,
                                         img/content/twk-2-lletn-u-christopher-campbell@3x.png 3x"
                                 class="visible-hidden">
@@ -94,8 +97,8 @@
                         </li>
                         <li class="comments__item">
                             <div class="comments__img" 
-                            style="background: url(img/content/cyxmk-32-bdlo-kahar-saidyhalam.png) no-repeat">
-                                <img src="img/content/cyxmk-32-bdlo-kahar-saidyhalam.png"
+                            style="background-image: url(img/content/cyxmk-32-bdlo-kahar-saidyhalam.png)">
+                                <img src="img/content/cyxmk-32-bdlo-kahar-saidyhalam.png" alt="мужчина"
                                 srcset="img/content/cyxmk-32-bdlo-kahar-saidyhalam@2x.png 2x,
                                         img/content/cyxmk-32-bdlo-kahar-saidyhalam@3x.png 3x"
                                 class="visible-hidden">
@@ -115,8 +118,8 @@
                         </li>
                         <li class="comments__item">
                             <div class="comments__img" 
-                            style="background: url(img/content/vector-smart-object.png) no-repeat">
-                                <img src="img/content/vector-smart-object.png"
+                            style="background-image: url(img/content/vector-smart-object.png)">
+                                <img src="img/content/vector-smart-object.png" alt="без картинки"
                                 srcset="img/content/vector-smart-object@2x.png 2x,
                                         img/content/vector-smart-object@3x.png 3x"
                                 class="visible-hidden">
@@ -137,8 +140,8 @@
                         </li>
                         <li class="comments__item">
                             <div class="comments__img" 
-                            style="background: url(img/content/y-0-i-85-d-5-qkvs-alex-harvey.png) no-repeat">
-                                <img src="img/content/y-0-i-85-d-5-qkvs-alex-harvey.png"
+                            style="background-image: url(img/content/y-0-i-85-d-5-qkvs-alex-harvey.png)">
+                                <img src="img/content/y-0-i-85-d-5-qkvs-alex-harvey.png" alt="бабушка"
                                 srcset="img/content/y-0-i-85-d-5-qkvs-alex-harvey@2x.png 2x,
                                         img/content/y-0-i-85-d-5-qkvs-alex-harvey@3x.png 3x"
                                 class="visible-hidden">
@@ -193,26 +196,26 @@
                     круглосуточной поддержки <a class="questions__text-phone" href="tel:+78000039210">8 (800) 00-392-10</a>.
                 </div>
             </section>
-            <form>
+            <form class="clearfix">
                 <section class="form">
                     <div class="form__inner">
                         <h2 class="content__title form__title">Оставить отзыв</h2>
                         <div class="form__content"> 
                             <div class="form__row">
-                                <div class="form__row-wrap">
-                                    <label class="form__row-title" >Ваше имя</label>
+                                <label class="form__row-wrap">
+                                    <span class="form__row-title" >Ваше имя</span>
                                     <input placeholder="Андрей" type="text" class="form__row-input">
-                                </div>
-                                <div class="form__row-wrap form__row-wrap-right">
-                                    <label class="form__row-title" >Ссылка на профиль VK</label>
+                                </label>
+                                <label class="form__row-wrap form__row-wrap-right">
+                                    <span class="form__row-title" >Ссылка на профиль VK</span>
                                     <input placeholder="vk.com/example" type="text" class="form__row-input">
-                                </div>
+                                </label>
                             </div>
                             <div class="form__row">
-                                <div class="form__row-wrap">
-                                    <label class="form__row-title" >Текст отзыва</label>
+                                <label class="form__row-wrap">
+                                    <span class="form__row-title" >Текст отзыва</span>
                                     <textarea class="form__row-textarea" placeholder="Мне понравилось"></textarea>
-                                </div>
+                                </label>
                             </div>
                             <div class="form__row">
                                 <div class="form__controls">
@@ -243,14 +246,14 @@
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container clearfix">
             <div class="footer__left">
                 Сделано с любовью и старанием
                 на курсе «Основы верстки» в <a class="footer__loftschool-link" target="_blank" href="https://loftschool.com/">LoftSchool</a>.
                 Автор работы: <b>Кустов Андрей</b>
             </div>
             <div class="footer__center">
-                <div class="logof">
+                <div class="logo logof">
                     <a href="index.html">
                         <img src="img/logo/logo-header.png" alt="Главная страница"
                         srcset="img/logo/logo-header@2x.png 2x,
@@ -263,52 +266,37 @@
                     <div class="social-media__title">Наши социальные сети</div>
                     <ul class="social-media__list">
                         <li class="social-media__item">
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--vk">
                                 <a href="#">
-                                    <img src="img/icons/vk.png" alt="ВК"
-                                    srcset="img/icons/vk@2x.png 2x,
-                                            img/icons/vk@3x.png 3x"
-                                    class="vk">
+                                    <span class="social-media__item-img-text">Вконтакте</span>
                                 </a>
                             </div>
                         </li>
                         <li class="social-media__item">
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--fb">
                                 <a href="#">
-                                    <img src="img/icons/fb.png" alt="ФБ"
-                                    srcset="img/icons/fb@2x.png 2x,
-                                            img/icons/fb@3x.png 3x"
-                                    class="fb">
+                                    <span class="social-media__item-img-text">Facebook</span>
                                 </a>
                             </div>
                         </li>
                         <li class="social-media__item"> 
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--google">
                                 <a href="#">
-                                    <img src="img/icons/google.png" alt="Гугл"
-                                    srcset="img/icons/google@2x.png 2x,
-                                            img/icons/google@3x.png 3x"
-                                    class="google">
+                                    <span class="social-media__item-img-text">Google</span>
                                 </a>
                             </div>
                         </li>
                         <li class="social-media__item">
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--twitter">
                                 <a href="#">
-                                    <img src="img/icons/twitter.png" alt="Твиттер"
-                                    srcset="img/icons/twitter@2x.png 2x,
-                                            img/icons/twitter@3x.png 3x"
-                                    class="twitter">
+                                    <span class="social-media__item-img-text">Twitter</span>
                                 </a>
                             </div>
                         </li>
                         <li class="social-media__item">
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--mail">
                                 <a href="#">
-                                    <img src="img/icons/mail.png" alt="Мэйл ру"
-                                    srcset="img/icons/mail@2x.png 2x,
-                                            img/icons/mail@3x.png 3x"
-                                    class="mail">
+                                    <span class="social-media__item-img-text">Mail</span>
                                 </a>
                             </div>
                         </li>                        

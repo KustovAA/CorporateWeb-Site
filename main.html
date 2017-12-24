@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
     <title>Главная</title>
 </head>
 
@@ -29,6 +28,10 @@
                         <a href="tel:+78000039210" class="contacts__phone-link">8 (800) 00-392-10</a>
                         <div class="contacts__time">
                             <a class="contacts__time-link" href="#">График работы</a>
+                            <div class="schedule">
+                                <div class="schedule__time">пн-вс: 09:00-20:00</div>
+                                <div class="schedule__lunch">обед: 14:00-14:30</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -42,19 +45,19 @@
                         <li class="menu__item">
                             <a class="menu__item-link is-active" href="main.html">
                                 <div class="menu__item-icon menu__item-icon-main"></div>
-                                <label for="menu__item-icon menu__item-icon-text">Главная</label>
+                                <span for="menu__item-icon menu__item-icon-text">Главная</span>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__item-link" href="comments.html">
                                 <div class="menu__item-icon menu__item-icon-feed"></div>
-                                <label for="menu__item-icon menu__item-icon-text">Отзывы</label>
+                                <span for="menu__item-icon menu__item-icon-text">Отзывы</span>
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__item-link" href="#">
+                            <a class="menu__item-link" href="team.html">
                                 <div class="menu__item-icon menu__item-icon-team"></div>
-                                <label for="menu__item-icon menu__item-icon-text">Экипаж</label>
+                                <span for="menu__item-icon menu__item-icon-text">Экипаж</span>
                             </a>
                         </li>
                     </ul>
@@ -67,7 +70,7 @@
                     <ul class="price__list">
                         <li class="price__item">
                             <div class="price__img">
-                                <img src="img/icons/flower.png"
+                                <img src="img/icons/flower.png" alt="цветок"
                                 srcset="img/icons/flower@2x.png 2x,
                                         img/icons/flower@3x.png 3x"
                                 class="price__img-pic">
@@ -85,7 +88,7 @@
                         </li>
                         <li class="price__item price__item-active">
                             <div class="price__img">
-                                <img src="img/icons/mark-as-favorite-star.png"
+                                <img src="img/icons/mark-as-favorite-star.png" alt="звезда"
                                 srcset="img/icons/mark-as-favorite-star@2x.png 2x,
                                         img/icons/mark-as-favorite-star@3x.png 3x"
                                 class="price__img-pic">    
@@ -103,7 +106,7 @@
                         </li>
                         <li class="price__item">
                             <div class="price__img">
-                                <img src="img/icons/painter-palette.png"
+                                <img src="img/icons/painter-palette.png" alt="палитра"
                                 srcset="img/icons/painter-palette@2x.png 2x,
                                         img/icons/painter-palette@3x.png 3x"
                                 class="price__img-pic">
@@ -125,8 +128,8 @@
                 <section class="news">
                     <ul class="news__list">
                         <li class="news__item">
-                            <div class="news__img" style="background: url(img/content/planeflying.png) no-repeat">
-                                <img src="img/content/planeflying.png"
+                            <div class="news__img" style="background-image: url(img/content/planeflying.png)">
+                                <img src="img/content/planeflying.png" alt="самолет"
                                 srcset="img/content/planeflying@2x.png 2x,
                                         img/content/planeflying@3x.png 3x"
                                 class="visible-hidden">
@@ -146,8 +149,8 @@
                             </div>
                         </li>
                         <li class="news__item">
-                            <div class="news__img" style="background: url(img/content/photo1.png) no-repeat">
-                                <img src="img/content/photo1.png"
+                            <div class="news__img" style="background-image: url(img/content/photo1.png)">
+                                <img src="img/content/photo1.png" alt="горы"
                                 srcset="img/content/photo1@2x.png 2x,
                                         img/content/photo1@3x.png 3x"
                                 class="visible-hidden">
@@ -167,8 +170,8 @@
                             </div>
                         </li>
                         <li class="news__item">
-                            <div class="news__img" style="background: url(img/content/layer-5.png) no-repeat">
-                                <img src="img/content/layer-5.png"
+                            <div class="news__img" style="background-image: url(img/content/layer-5.png)">
+                                <img src="img/content/layer-5.png" alt="ребенок"
                                 srcset="img/content/layer-5@2x.png 2x,
                                         img/content/layer-5@3x.png 3x"
                                 class="visible-hidden">
@@ -223,7 +226,7 @@
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container clearfix">
             <div class="footer__left">
                 Сделано с любовью и старанием
                 на курсе «Основы верстки» в <a class="footer__loftschool-link" target="_blank" href="https://loftschool.com/">LoftSchool</a>.
@@ -243,52 +246,37 @@
                     <div class="social-media__title">Наши социальные сети</div>
                     <ul class="social-media__list">
                         <li class="social-media__item">
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--vk">
                                 <a href="#">
-                                    <img src="img/icons/vk.png" alt="ВК"
-                                    srcset="img/icons/vk@2x.png 2x,
-                                            img/icons/vk@3x.png 3x"
-                                    class="vk">
+                                    <span class="social-media__item-img-text">Вконтакте</span>
                                 </a>
                             </div>
                         </li>
                         <li class="social-media__item">
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--fb">
                                 <a href="#">
-                                    <img src="img/icons/fb.png" alt="ФБ"
-                                    srcset="img/icons/fb@2x.png 2x,
-                                            img/icons/fb@3x.png 3x"
-                                    class="fb">
+                                    <span class="social-media__item-img-text">Facebook</span>
                                 </a>
                             </div>
                         </li>
                         <li class="social-media__item"> 
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--google">
                                 <a href="#">
-                                    <img src="img/icons/google.png" alt="Гугл"
-                                    srcset="img/icons/google@2x.png 2x,
-                                            img/icons/google@3x.png 3x"
-                                    class="google">
+                                    <span class="social-media__item-img-text">Google</span>
                                 </a>
                             </div>
                         </li>
                         <li class="social-media__item">
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--twitter">
                                 <a href="#">
-                                    <img src="img/icons/twitter.png" alt="Твиттер"
-                                    srcset="img/icons/twitter@2x.png 2x,
-                                            img/icons/twitter@3x.png 3x"
-                                    class="twitter">
+                                    <span class="social-media__item-img-text">Twitter</span>
                                 </a>
                             </div>
                         </li>
                         <li class="social-media__item">
-                            <div class="social-media__item-img">
+                            <div class="social-media__item-img social-media__item-img--mail">
                                 <a href="#">
-                                    <img src="img/icons/mail.png" alt="Мэйл ру"
-                                    srcset="img/icons/mail@2x.png 2x,
-                                            img/icons/mail@3x.png 3x"
-                                    class="mail">
+                                    <span class="social-media__item-img-text">Mail</span>
                                 </a>
                             </div>
                         </li>                        

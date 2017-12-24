@@ -1,0 +1,45 @@
+.partners__list {
+    margin-left: 60px;
+}
+
+.partners__item-img {
+    width: 243px;
+    height: 63px;
+    margin-bottom: 81px;
+    filter: grayscale(1);
+    transition: filter .3s;
+}
+
+.partners__item-img:hover {
+    filter: grayscale(0);
+}
+
+.partners__item {
+    float: left;
+}
+
+.partners__item-img--bmp {
+    background: url(../img/logo/logo-1.png) no-repeat;
+}
+
+.partners__item-img--tetra {
+    background: url(../img/logo/logo-2.png) no-repeat;
+}
+
+.partners__item-img--sib {
+    background: url(../img/logo/logo-3.png) no-repeat;
+}
+
+.partners__item-img--one {
+    background: url(../img/logo/logo-4.png) no-repeat;
+    margin-right: 64px;
+}
+
+.partners__item-img--bing {
+    background: url(../img/logo/logo-5.png) no-repeat;
+    width: 229px;
+}
+
+.partners__item-img--ural {
+    background: url(../img/logo/logo-6.png) no-repeat;
+}

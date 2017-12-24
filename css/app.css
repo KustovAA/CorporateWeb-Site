@@ -1,0 +1,15 @@
+@import url(normalize.css);
+@import url(base.css);
+@import url(header.css);
+@import url(sidebar.css);
+@import url(content.css);
+@import url(breadcrumbs.css);
+@import url(comments.css);
+@import url(price.css);
+@import url(news.css);
+@import url(team-block.css);
+@import url(partners.css);
+@import url(pagination.css);
+@import url(questions.css);
+@import url(form.css);
+@import url(footer.css);

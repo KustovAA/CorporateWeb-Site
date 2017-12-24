@@ -1,0 +1,23 @@
+.content {
+    float: right;
+    width: 880px;
+    padding-top: 35px;
+}
+
+.content__banner {
+    height: 299px;
+    position: relative;
+    background-size: 880px;
+    background: url(../img/content/photo.png) no-repeat;
+}
+
+.content__title {
+    height: 47px;
+    font-family: Roboto;
+    font-size: 49px;
+    font-weight: bold;
+    line-height: 0.78;
+    text-align: left;
+    color: #221f1f;
+}
+
