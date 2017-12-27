@@ -50,7 +50,8 @@ body {
 .intro__send-img {
     width: 23px;
     height: 18px;
-    background: url(../img/icons/main-icon.png) no-repeat;
+    background: url(../img/sprites/intro_sprites.png) no-repeat;
+    background-position: -20px -72.5px;
 }
 
 .intro__logo, .intro__send {
@@ -64,6 +65,19 @@ body {
     border-radius: 3px;
     position: relative;
     border: solid 1px #1c5bc3;
+    animation-name: zoomIn;
+    animation-duration: 1s;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3); 
+    }
+
+    50% {
+        opacity: 1; 
+    } 
 }
 
 .intro__send:hover {
@@ -76,7 +90,7 @@ body {
 }
 
 .intro__send:hover .intro__send-img {
-    background: url(../img/icons/main-icon-white.png) no-repeat;
+    background-position: -20px -18.5px;
 }
 
 .intro__send-text, .intro__send-img {
